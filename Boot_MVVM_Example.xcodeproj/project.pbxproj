@@ -14,6 +14,7 @@
 		0CF0016D2DDA667500AF190A /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 0CF0016C2DDA667500AF190A /* README.md */; };
 		0CF001702DDA6C0B00AF190A /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF0016F2DDA6C0B00AF190A /* WebService.swift */; };
 		0CF001732DDA6CDA00AF190A /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF001722DDA6CDA00AF190A /* Product.swift */; };
+		0CF001762DDA722300AF190A /* ProductListVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF001752DDA722300AF190A /* ProductListVM.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		0CF0016C2DDA667500AF190A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		0CF0016F2DDA6C0B00AF190A /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
 		0CF001722DDA6CDA00AF190A /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		0CF001752DDA722300AF190A /* ProductListVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListVM.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 			children = (
 				0CF0015E2DDA63E900AF190A /* Boot_MVVM_ExampleApp.swift */,
 				0CF001602DDA63E900AF190A /* ContentView.swift */,
+				0CF001742DDA720C00AF190A /* ViewModels */,
 				0CF001712DDA6CA100AF190A /* Models */,
 				0CF0016E2DDA6BC600AF190A /* Services */,
 				0CF001622DDA63EB00AF190A /* Assets.xcassets */,
@@ -90,6 +93,14 @@
 				0CF001722DDA6CDA00AF190A /* Product.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		0CF001742DDA720C00AF190A /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				0CF001752DDA722300AF190A /* ProductListVM.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,6 +177,7 @@
 				0CF001702DDA6C0B00AF190A /* WebService.swift in Sources */,
 				0CF001732DDA6CDA00AF190A /* Product.swift in Sources */,
 				0CF001612DDA63E900AF190A /* ContentView.swift in Sources */,
+				0CF001762DDA722300AF190A /* ProductListVM.swift in Sources */,
 				0CF0015F2DDA63E900AF190A /* Boot_MVVM_ExampleApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

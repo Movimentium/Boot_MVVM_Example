@@ -3,17 +3,18 @@
 //  Created by Miguel Gallego on 18/5/25.
 import Foundation
 
+let strAPI = "https://fakestoreapi.com/products"
+
 enum NetworkError: Error {
     case badURL
     case badRequest
     case decodingError
 }
 
-
 class WebService {
 
     func getProducts() async throws -> [Product] {
-        guard let url = URL(string: "https://fakestoreapi.com/products") else {
+        guard let url = URL(string: strAPI) else {
             throw NetworkError.badURL
         }
         
@@ -25,6 +26,6 @@ class WebService {
         guard let products = try? JSONDecoder().decode([Product].self, from: data) else {
             throw NetworkError.decodingError
         }
-        return products 
+        return products
     }
 }
